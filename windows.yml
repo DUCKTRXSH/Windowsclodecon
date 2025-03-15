@@ -3,13 +3,13 @@ volumes:
   windows_extra_data:
 services:
   windows:
-    image: docker/windows
+    image: dockurr/windows
     container_name: windows
     environment:
       VERSION: "11l"
       REGION: "en-US"
       KEYBOARD: "en-US"
-      USERNAME: "User"
+      USERNAME: "windows_admin"
       PASSWORD: "1234"
       RAM_SIZE: "4G"
       CPU_CORES: "2"
@@ -23,7 +23,13 @@ services:
     ports:
       - "8006:8006"
       - "3389:3389/tcp"
-      - "3389:3389/udp"
     volumes:
       - windows_main_data:/data
       - windows_extra_data:/extra
+    resources:
+      limits:
+        memory: 4G
+        cpus: "2.0"
+      reservations:
+        memory: 2G
+        cpus: "1.0"
