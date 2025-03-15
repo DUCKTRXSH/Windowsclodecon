@@ -31,3 +31,13 @@ Value	Version	Name
 13	macOS 13	Ventura
 12	macOS 12	Monterey
 11	macOS 11	Big Sur
+
+เริ่มการทำงาน wind
+cd user && sudo docker-compose -f windows.yml start
+หยุดการทำงาน wind
+sudo docker-compose -f windows.yml stop
+
+เริ่มการทำงาน macos
+cd user && sudo docker-compose -f macos.yml start
+หยุดการทำงาน macos
+sudo docker-compose -f macos.yml stop
