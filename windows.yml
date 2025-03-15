@@ -3,7 +3,7 @@ volumes:
   windows_extra_data:
 services:
   windows:
-    image: dockurr/windows
+    image: docker/windows
     container_name: windows
     environment:
       VERSION: "11l"
