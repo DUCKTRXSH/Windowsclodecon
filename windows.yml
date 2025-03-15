@@ -14,7 +14,7 @@ services:
       RAM_SIZE: "4G"
       CPU_CORES: "2"
       DISK_SIZE: "20G"
-      DISK2_SIZE: "2G"
+      DISK2_SIZE: "20G"
     devices:
       - /dev/kvm
       - /dev/net/tun
