@@ -3,7 +3,7 @@ volumes:
   macos_extra_data:
 services:
   macos:
-    image: docker/macos
+    image: dockurr/macos
     container_name: macos
     environment:
       VERSION: "13"
