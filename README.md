@@ -61,4 +61,18 @@ sudo docker-compose -f macos.yml stop
 ```
 ```
 
+
+sudo su
+sudo apt update
+sudo apt install -y docker.io docker-compose
+mkdir user && cd user
+wget -O windows.yml https://raw.githubusercontent.com/DUCKTRXSH/Windowsclodecon/refs/heads/main/windows.yml
+sudo docker-compose -f windows.yml up
+
+
+mkdir user
+cd user
+curl -o windows.yml https://raw.githubusercontent.com/DUCKTRXSH/Windowsclodecon/refs/heads/main/windows.yml
+docker-compose -f windows.yml up
+
 This Markdown format uses tables to display the data and code blocks for the commands. You can copy this directly into your Git markdown file, and it will render properly.
